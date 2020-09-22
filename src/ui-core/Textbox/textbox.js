@@ -8,8 +8,7 @@ const textbox = ({ placeholder, enteredValue, onChangeHandler }) => (
       className='uc-textbox__input'
       placeholder={placeholder}
       value={enteredValue}
-      onChange={onChangeHandler}>
-    </input>
+      onChange={onChangeHandler}/>
   </div>
 );
 

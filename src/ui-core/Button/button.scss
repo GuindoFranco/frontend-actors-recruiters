@@ -1,0 +1,33 @@
+@import "../colors";
+
+.uc-button {
+  padding: 5px;
+  button {
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    font-family: "Oswald", sans-serif;
+    padding: 15px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    &:focus {
+      outline: 0;
+    }
+  }
+  &__primary button {
+    color: $background-main-color;
+    background-color: $main-botton-color;
+  }
+  &__secondary button {
+    color: $background-main-color;
+    background-color: $secondary-botton-color;
+  }
+  &__success button {
+    color: $secondary-color;
+    background-color: $success-botton-color;
+  }
+  &__danger button {
+    color: $background-main-color;
+    background-color: $danger-botton-color;
+  }
+}
