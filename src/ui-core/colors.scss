@@ -2,7 +2,9 @@
 // TODO define a color palette here
 $main-color: #d64550;
 $secondary-color: #1c2826;
-$background-main-color: #ffffff;
+$background-main-color: #222222;
+$light-main-color: #ffffff;
+$dark-main-color: #222222;
 $shadow-main-color: rgba(0, 0, 0, 0.1);
 
 /* Font colors */
@@ -16,3 +18,6 @@ $info-botton-color: #eef4d4;
 $success-botton-color: #daefb3;
 $danger-botton-color: #ea9e8d;
 $secondary-botton-color: $secondary-color;
+
+/* FieldError */
+$background-fielError-color: $dark-main-color;

@@ -1,30 +1,23 @@
 import React from 'react';
 
 import Button from './ui-core/Button/button';
+import FieldError from './ui-core/FieldError/fieldError';
 import Textbox from './ui-core/Textbox/textbox';
 
 function App() {
   return (
-    <div style={{ margin: '20px', width: '300px', position: 'relative', float: 'left' }}>
-      <Button type='primary' onClicked={() => { console.log('clicked!'); }}>
-        Login
-      </Button>
-      <Button type='success'>
-        Login
-      </Button>
-      <Button type='danger'>
-        Login
-      </Button>
-      <Button type='secondary'>
-        Login
-      </Button>
-      <div>
+    <div>
+
+      <div style={{ margin: '100px', width: '300px', position: 'relative', float: 'left', textAlign: 'center' }}>
         <Textbox
-          placeholder='Enter a value' />
+          placeholder='Email/Username' showError errorMessage={'Enter an input'} />
         <Textbox
-          placeholder='Enter a value' />
+          placeholder='Password' showError errorMessage={'Enter a valid password'} />
         <Textbox
-          placeholder='Enter a value' />
+          placeholder='Confirm password' errorMessage={'Enter the same value'} />
+        <Button type='primary' onClicked={() => { console.log('clicked!'); }}>
+          Login
+        </Button>
       </div>
     </div>
   );

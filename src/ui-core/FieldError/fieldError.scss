@@ -1,0 +1,25 @@
+@import "../colors.scss";
+
+.uc-fieldError {
+  margin: 0;
+  color: $font-color-light;
+  right: 30px;
+  bottom: calc(100% + 6px);
+  padding: 8px 16px;
+  position: absolute;
+  background: $background-fielError-color;
+  border-radius: 7px;
+  visibility: hidden;
+  &::after {
+    right: calc(50% - 8px);
+    border: 6px solid transparent;
+    bottom: -12px;
+    content: "";
+    display: block;
+    position: absolute;
+    border-top-color: $background-fielError-color;
+  }
+  &__visible {
+    visibility: visible;
+  }
+}
