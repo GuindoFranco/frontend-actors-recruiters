@@ -1,0 +1,28 @@
+@import "../colors";
+
+.uc-input {
+  padding: 10px;
+  box-sizing: border-box;
+  
+  &__label {
+    text-align: initial;
+    padding-left: 14px;
+    font-weight: bold;
+    display: block;
+  }
+
+  &__element {
+    font: inherit;
+    font-size: 21px;
+    height: 100%;
+    padding: 22px 24px;
+    color: $font-color-grey;
+    background-color: $light-main-color;
+    border-radius: 7px;
+    border: 0;
+    box-shadow: 0 5px 20px 0 $shadow-main-color;
+    &:focus {
+      outline: 0;
+    }
+  }
+}

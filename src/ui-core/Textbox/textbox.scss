@@ -4,17 +4,6 @@
   margin: 5px;
   position: relative;
   &__input {
-    font-family: "Oswald", sans-serif;
-    font-size: 21px;
-    height: 100%;
-    padding: 22px 24px;
-    color: $font-color-grey;
-    background-color: $light-main-color;
-    border-radius: 7px;
-    border: 0;
-    box-shadow: 0 5px 20px 0 $shadow-main-color;
-    &:focus {
-      outline: 0;
-    }
+    
   }
 }
